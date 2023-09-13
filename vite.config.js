@@ -3,12 +3,6 @@ import laravel from 'laravel-vite-plugin';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-    // server: {
-    //     hmr: {
-    //         host: "icr.test"
-    //     },
-    //     host: 'icr.test'
-    // },
     plugins: [
         laravel({
             input: 'resources/js/app.tsx',
@@ -16,4 +10,13 @@ export default defineConfig({
         }),
         react(),
     ],
+    watch:{
+        usePolling: true,
+        origin: 'http://icr.test'
+    },
+    server: {
+        hmr: {
+            host: 'icr.test'
+        }
+    }
 });

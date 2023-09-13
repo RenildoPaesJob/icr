@@ -5,7 +5,7 @@ import UpdateProfileInformationForm from './Partials/UpdateProfileInformationFor
 import { Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
 
-export default function Edit({ auth, mustVerifyEmail, status, nomes }: PageProps<{ mustVerifyEmail: boolean, status?: string, nomes?: [string] }>) {
+export default function Edit({ auth, mustVerifyEmail, status }: PageProps<{ mustVerifyEmail: boolean, status?: string }>) {
     return (
         <AuthenticatedLayout
             user={auth.user}
@@ -13,19 +13,9 @@ export default function Edit({ auth, mustVerifyEmail, status, nomes }: PageProps
         >
             <Head title="Profile" />
 
-            <div className="py-12 w-96 h-96">
-                <ul>
-                    {nomes?.map((name, index) => (
-                        <li key={index}>
-                            {name}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-                    <div className="p-4 sm:p-8 dark:bg-gray-800 shadow sm:rounded-lg bg-red-700">
+                    <div className="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
                         <UpdateProfileInformationForm
                             mustVerifyEmail={mustVerifyEmail}
                             status={status}

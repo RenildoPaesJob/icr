@@ -1,51 +1,90 @@
 import LogoICR from "@/Components/LogoICR";
 import PrimaryButton from "@/Components/PrimaryButton";
-import TextInput from "@/Components/TextInput";
-import { Link, Head } from "@inertiajs/react";
 
 export function WebIndex() {
 	return (
 		<>
-			<div className="flex justify-between h-screen">
-				<div className="bg-yellow-500 flex-1">
-					<div className="mt-20 flex justify-center">
+			<div className="md:flex justify-center gap-10 sm:flex-col lg:flex-row">
+				<div className="flex-col flex-1 flex justify-center">
+					<div className="flex justify-center">
 						<LogoICR />
 					</div>
 
-					<div className="bg-red-700 w-4/6">
-						<h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl flex justify-center m-5">
+					<div className="p-4 mx-4 mt-4">
+						<div className="text-4xl text-center font-bold tracking-tight text-white sm:text-6xl flex justify-center">
 							Igreja Cristã Rhema
-						</h1>
+						</div>
 
-						<p className="mt-4 text-xl text-gray-300 text-end">
+						<div className="mt-4 text-xl text-center text-gray-300">
 							A alegria do senhor, é a nossa força!
-						</p>
+						</div>
+					</div>
 
+					<div className="justify-center flex">
+						<PrimaryButton>Quero Conhecer</PrimaryButton>
 					</div>
 				</div>
 
-				<div className="bg-red-500 flex-1">
-					<h1>Hello World</h1>
+				<div className="flex-col flex-1 flex sm:m-8">
+					<div className="flex items-center space-x-6 lg:space-x-8 md:justify-center sm:justify-center">
+						<div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+							<div className="h-64 w-44 overflow-hidden rounded-lg">
+								<img
+									src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+									alt=""
+									className="h-full w-full object-cover object-center"
+								/>
+							</div>
+							<div className="h-64 w-44 overflow-hidden rounded-lg">
+								<img
+									src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+									alt=""
+									className="h-full w-full object-cover object-center"
+								/>
+							</div>
+						</div>
+						<div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+							<div className="h-64 w-44 overflow-hidden rounded-lg">
+								<img
+									src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+									alt=""
+									className="h-full w-full object-cover object-center"
+								/>
+							</div>
+							<div className="h-64 w-44 overflow-hidden rounded-lg">
+								<img
+									src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+									alt=""
+									className="h-full w-full object-cover object-center"
+								/>
+							</div>
+							<div className="h-64 w-44 overflow-hidden rounded-lg">
+								<img
+									src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+									alt=""
+									className="h-full w-full object-cover object-center"
+								/>
+							</div>
+						</div>
+						<div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+							<div className="h-64 w-44 overflow-hidden rounded-lg">
+								<img
+									src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+									alt=""
+									className="h-full w-full object-cover object-center"
+								/>
+							</div>
+							<div className="h-64 w-44 overflow-hidden rounded-lg">
+								<img
+									src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+									alt=""
+									className="h-full w-full object-cover object-center"
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
-			{/* <div className="relative overflow-hidden bg-center dark:bg-dots-lighter dark:bg-gray-900">
-				<div className="flex mb-6">
-					<LogoICR />
-				</div>
-
-				<h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-					Igreja Cristã Rhema
-				</h1>
-
-				<p className="mt-4 text-xl text-gray-400">
-					A alegria do senhor, é a nossa força!
-				</p>
-
-				<PrimaryButton className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700 mt-4">
-					Quero Conhecer
-				</PrimaryButton>
-			</div> */}
 		</>
 	);
 }

@@ -1,4 +1,4 @@
-import logo from "../../img/logo_icr_sem_descricao.png";
+import logo from "../../img/lion_logo_icr.png";
 import logoDescription from "../../img/logo_icr_com_descricao.png";
 
 interface LogoProps {

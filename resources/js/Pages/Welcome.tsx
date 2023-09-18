@@ -35,7 +35,11 @@ export default function Welcome({ auth }: PageProps) {
 					)}
 				</div>
 
+
+			<div className="flex flex-col">
 				<WebIndex />
+			</div>
+
 			</div>
 		</>
 	);

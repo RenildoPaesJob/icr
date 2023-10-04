@@ -71,6 +71,7 @@ export default function Member({ auth }: PageProps) {
 											</td>
 										</tr>
 										<tr>
+											
 											<td className="px-6 py-4 whitespace-nowrap flex">
 												<img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Avatar do Usuário" />
 												<span className="text-sm text-gray-900 dark:text-white ml-4 mt-2">Nome do Usuário</span>
